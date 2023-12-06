@@ -24,7 +24,7 @@ plt.xlabel('Customers')
 plt.ylabel('Euclidean Distances')
 plt.show()
 from sklearn.cluster import AgglomerativeClustering
-      hc=AgglomerativeClustering(n_clusters=5,affinity='euclidean',linkage=’ward’)
+      hc=AgglomerativeClustering(n_clusters=5,affinity='euclidean',linkage='ward')
       y_hc=hc.fit_predict(x)
 y_hc
 plt.scatter(x[y_hc==0,0],x[y_hc==0,1],s=50,c='blue',label='Cluster 1')
